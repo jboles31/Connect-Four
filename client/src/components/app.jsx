@@ -2,7 +2,7 @@
 /////gameboard
 let GameBoard = ({placeToken}) => {
     return (
-        <div>GameBoard
+        <div>
             <tbody>
                 <tr className="row5">
                     <td x={0} y = {5} onClick={() => placeToken(0)}></td>
@@ -229,7 +229,6 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <div>App</div>
                 <GameBoard placeToken={this.placeToken}/>
             </div>
         )
